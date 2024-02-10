@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>landing page</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			padding: 0px;
+		}
+		.navigation{
+			background: #1e81b0;
+			margin-bottom: 0px;
+		}
+		.navigation ul{
+			overflow: auto;
+			box-sizing: border-box;
+			margin-bottom: 0px;
+		}
+		.navigation li
+		{
+			float: left;
+			font-family: Corbel;
+			list-style: none;
+			margin: 15px 20px;
+		}
+		a:hover{
+			color: red;
+		}
+		.navigation li{
+			color: white;
+			text-decoration: none;
+			padding: 3px 3px;
+		}
+		a{
+			text-decoration: none;
+			color: whitesmoke;
+			font-size: 18px;
+		}
+		.search{
+			float: right;
+			color: white;
+			padding: 15px 30px;
+		}
+		#search{
+			border-radius: 8px;
+			float: left;
+			border:1px solid black;
+		}
+		
+		.body{
+			margin-top: 0px;
+			background-position: center;	
+			width: 100%;
+			height: 400px;
+			
+			background-size: cover;
+			background-image: url(image1.jpg);		
+		}
+		.main{
+			position: relative;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			backdrop-filter:blur(5px);
+		  	background-color: rgba(255, 255, 255, 0.1); /* You can change the color and opacity as desired */
+		}
+		.main_text{
+			font-family: Calibri;
+			position: absolute;
+		 text-align: justify;
+		 padding-left: 200px;
+		 padding-right: 100px;
+
+		}
+
+		.main_text h1, .main_text p{
+			color:#ffffff;
+			border-left: 5px solid red;
+			line-spacing: 5px;
+			padding-left: 10px;
+
+		}
+		.box{
+			width: 100%;
+			height: 150px;
+			background:linear-gradient(to left,blue,brown);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.content{
+			height: 150px;
+			width: 300px;
+			padding: 20px;
+			float: left;
+			margin:10px;
+			padding: 20px;
+		}
+		.content h3{
+			color: white;
+			font-weight: bold;
+		}
+		.content p{
+			color: yellow;
+
+		}
+		.about_us{
+			position: relative;
+			margin:0px auto ;
+			height: 400px;
+			width: 70%;
+			font-family:calibri;
+			word-spacing: 5px;
+			overflow: hidden;
+		}
+		.left_about_us{
+			position: absolute;
+			width:60%;
+			float: left;
+			padding-left: 30px;
+		}
+		.left_about_us h2{
+			color:black;
+		}
+		.left_about_us p{
+			line-spacing:;
+		}
+		.right_about_us{
+			float: right;
+			width: 40%;
+			height: 100%;
+		}
+		.right_about_us img{
+			width: 100%;
+			height: 90%;
+		}
+		.left_about_us button{
+			background:linear-gradient(to right,yellow,green);
+			border:none;
+			height: 30px;
+			width:30%;
+			border-radius: 10px;
+			font-size: 15px;
+		}
+		.third_content{
+			width: 70%;
+			height: 340px;
+			margin: 0px auto;
+		}
+		.middle_Section{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			
+		}
+		.third_content1{
+			width: 220px;
+			margin: 10px;
+			font-family:calibri;
+			background-size: fill;
+			background-color: #ffefd5;
+			box-shadow: 10px 10px 10px 0px gray;
+		}
+		.third_content1 img{
+			height:200px;
+			width:220px;
+			object-fit: contain;
+
+			}
+		.third_content1 #button1{
+			text-align: center;
+			padding-top: 10px;
+			height: 40px;
+			width: 150px;
+			box-sizing: border-box;
+			position: absolute;
+			top: 200px;
+			left:220px;
+			background: #d0d3d4;
+			border-radius: 30px;
+			box-sizing: border-box;
+			color:#7b7d7d ;
+			
+		}
+		.third_content1 #button2{
+			text-align: center;
+			padding-top: 10px;
+			height: 40px;
+			width: 150px;
+			box-sizing: border-box;
+			position: absolute;
+			top: 200px;
+			left:450px;
+			background: #81ecec;
+			border-radius: 30px;
+			color:#7b7d7d ;
+			
+		}
+		.third_content1 #button3{
+			text-align: center;
+			padding-top: 10px;
+			height: 40px;
+			width: 150px;
+			position: absolute;
+			top: 200px;
+			left:700px;
+			background: #ffbe76;
+			border-radius:30px;
+			box-sizing: border-box;
+			color:#7b7d7d ;
+		}
+		.third_content1  h4{
+			color: #7b7d7d;
+		}
+		#heading{
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<nav class="navigation">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#Contact">Contact</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#service">Service</a></li>
+			<li><a href="#home">Testinomials</a></li>
+			<div class="search">
+
+				<input type="search" name="search" id="search" placeholder="search here" size="30">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				
+			</div> 
+		</ul>
+	</nav>
+
+</header>
+<div class="body">
+<div class="main">
+	<div class="main_text">
+		<h1>CREATIVE DIGITAL AGENCYTIVE DIGITAL AGENCY</h1>
+		<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+	</div>
+</div>
+</div>
+<div class="box">
+	<div class="content"><h3>Business section</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+	</div>
+	<div class="content"><h3>Management section</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p></div>
+	<div class="content"><h3>Tecnhnical section</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p></div>
+</div>
+<div class="about_us">
+	<div class="left_about_us">
+		<h2>ABOUT US</h2>
+		<H3>I am a software developer and i have a 5 years experience with microsoft company</H3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button type="submit" value="view more" name="view more">view more</button>
+	</div>
+	<div class="right_about_us">
+		<img src="person_pic.png">
+	</div>
+</div>
+
+<div class="third_content">
+	<h2 id="heading">OUR SERVICE</h2>
+	<div class="middle_Section">
+		<div class="third_content1" >
+			<img src="1.jpg">
+			<div id="button1">Graphics Design</div>
+		</div>
+		<div class="third_content1"><img src="2.jpg">
+			<div id="button2">Content Creator</div>
+		</div>
+		<div class="third_content1"><img src="3.jpg">
+			
+		<div id="button3">Developer</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+	
+</script>
+</body>
+</html>
